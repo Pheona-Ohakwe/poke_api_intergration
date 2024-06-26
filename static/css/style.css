@@ -1,0 +1,101 @@
+/* Reset and general styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f0f0f0;
+color: #333;
+line-height: 1.6;
+}
+
+/* Header styles */
+.header-container {
+padding: 20px 0;
+}
+
+#pokemon-word {
+width: 300px; /* Adjust width as needed */
+}
+
+/* Navigation styles */
+.navbar {
+background-color: #333;
+padding: 0;
+}
+
+.navbar-nav {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+
+.nav-item {
+padding: 10px;
+}
+
+.nav-link {
+color: #fff;
+font-size: 18px;
+text-transform: uppercase;
+transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+color: #ffc107; /* Change color on hover */
+}
+
+/* Video container styles */
+#video-container {
+position: relative;
+overflow: hidden;
+height: 100vh;
+}
+
+#bgVideo {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -1;
+}
+
+/* Section with Pokémon images styles */
+section {
+padding: 20px;
+text-align: center;
+}
+
+#ash, #pikachu, #skitty, #bulbasaur, #jigglypuff {
+width: 200px; /* Adjust image width */
+margin-bottom: 20px;
+border-radius: 50%;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.navbar-nav {
+flex-direction: column;
+}
+
+.nav-item {
+padding: 10px 0;
+}
+
+#pokemon-word {
+width: 200px;
+}
+
+#ash, #pikachu, #skitty, #bulbasaur, #jigglypuff {
+width: 150px;
+}
+}
